@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:#1e1e1e;
+            color: white;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color:  #23292e
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+            font-size: larger;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+
+        }
+
+        .firstsection div {
+            width: 30%;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 50px 0;
+        }
+
+
+
+        .rightsection img {
+            width: 130%;
+            margin: 50px 0;
+            padding-left: 0px;
+            transform: translateX(-150px);
+
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px 80px;
+            padding-top: 70px;
+
+        }
+        .good{
+            color:rgb(255, 222, 34);
+        }
+
+        nav ul li a:hover{
+            color:aqua;
+            font-size: 1.2rem;
+        }
+        #element{
+            color: rgb(255, 232, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">The Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, my name is <span class="good">Zoro</span> and i am a fully developed and skilled  <span id="element"></span></div>
+            
+            <div class="rightsection">
+                <img src="bg.png.png" alt="image">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer', 'Web coder ' , 'Web Maker ','Web designer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</body>
+
+</html>
